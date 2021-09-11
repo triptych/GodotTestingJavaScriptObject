@@ -1,0 +1,89 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Output 1" type="Label" parent="."]
+margin_left = 35.2542
+margin_top = 52.7762
+margin_right = 215.254
+margin_bottom = 100.776
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Output 2" type="Label" parent="."]
+margin_left = 32.0034
+margin_top = 111.305
+margin_right = 212.003
+margin_bottom = 159.305
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 30.0
+margin_top = 26.0
+margin_right = 399.0
+margin_bottom = 89.0
+text = "Calling JavaScript Objects in Godot
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 45.0
+margin_top = 278.0
+margin_right = 57.0
+margin_bottom = 298.0
+text = "Click To Call Alert!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 44.9492
+margin_top = 306.404
+margin_right = 56.9492
+margin_bottom = 326.404
+text = "Update Godot from Javascript"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 47.1967
+margin_top = 335.621
+margin_right = 59.1967
+margin_bottom = 355.621
+text = "Open a new window"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 317.0
+margin_top = 27.0
+margin_right = 506.0
+margin_bottom = 41.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 309.508
+margin_top = 274.97
+margin_right = 321.508
+margin_bottom = 294.97
+text = "Create a DOM element"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_down" from="Button" to="." method="_on_Button_button_down"]
+[connection signal="button_down" from="Button2" to="." method="_on_Button2_button_down"]
+[connection signal="button_down" from="Button3" to="." method="_on_Button3_button_down"]
+[connection signal="button_down" from="Button4" to="." method="_on_Button4_button_down"]
