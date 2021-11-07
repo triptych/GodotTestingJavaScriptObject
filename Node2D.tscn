@@ -83,7 +83,37 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Output iframe" type="Label" parent="."]
+margin_left = 146.0
+margin_top = 371.0
+margin_right = 454.0
+margin_bottom = 411.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label iframe" type="Label" parent="."]
+margin_left = 50.0
+margin_top = 369.0
+margin_right = 90.0
+margin_bottom = 383.0
+text = "From parent"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 58.0
+margin_top = 422.0
+margin_right = 70.0
+margin_bottom = 442.0
+text = "PostMessage"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="button_down" from="Button" to="." method="_on_Button_button_down"]
 [connection signal="button_down" from="Button2" to="." method="_on_Button2_button_down"]
 [connection signal="button_down" from="Button3" to="." method="_on_Button3_button_down"]
 [connection signal="button_down" from="Button4" to="." method="_on_Button4_button_down"]
+[connection signal="button_down" from="Button5" to="." method="_on_Button5_button_down"]
